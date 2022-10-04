@@ -1,0 +1,111 @@
+@import "variables";
+@import "mixins";
+
+// GENERAL STYLES
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+// LAYOUT STYLES
+html,
+body {
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    flex: 0 0 auto;
+  }
+
+  // .app__content
+  &__content {
+    flex: 1 0 auto;
+  }
+}
+
+.container {
+  max-width: $xxl-bp;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// OTHER STYLES
+.header {
+  font-size: 2rem;
+
+  // .header__container
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .header__link
+  &__link {
+    text-decoration: none;
+    color: $gray;
+  }
+
+  // .header__actions
+  &__actions {
+    display: flex;
+  }
+
+  // .header__button
+  &__button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+  }
+}
+
+.login-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.menu {
+
+  // .menu__list
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  // .menu__item
+  &__item {
+  }
+
+  // .menu__link
+  &__link {
+    text-decoration: none;
+    color: $gray;
+  }
+}
+
+.burger-button {
+  width: 50px;
+  background-color: transparent;
+  border: none;
+}
+
+.home {
+  height: 100vh;
+}
