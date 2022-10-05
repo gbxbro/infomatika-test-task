@@ -196,15 +196,57 @@ body {
   }
 }
 
+.swiper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // .swiper__list
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  // .swiper__item
+  &__item {
+
+  }
+}
+
 .hexagon {
+  transform: rotate(90deg);
   position: relative;
-  width: 300px;
-  height: 300px;
   background-color: transparent;
   display: flex;
   justify-content: center;
 
-  span {
+  // .hexagon_lg
+  &_lg {
+    width: 300px;
+    height: 300px;
+  }
+
+  // .hexagon_md
+  &_md {
+    width: 250px;
+    height: 250px;
+  }
+
+  // .hexagon_sm
+  &_sm {
+    width: 180px;
+    height: 180px;
+  }
+
+  // .hexagon__inner
+  &__inner {
     position: relative;
     display: block;
     width: 60%;
@@ -231,5 +273,11 @@ body {
       transform: rotate(-60deg);
       border-radius: 10px;
     }
+  }
+
+  // .hexagon__content
+  &__content {
+    position: absolute;
+    z-index: 10;
   }
 }
