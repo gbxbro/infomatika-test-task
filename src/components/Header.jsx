@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header__container container">
-                <Link className="header__link" to="/">
+                <Link className="header__link text-uppercase" to="/">
                     Билеты и абонементы
                 </Link>
                 <nav className="header__menu menu">
